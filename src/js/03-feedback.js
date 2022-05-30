@@ -31,8 +31,8 @@ function handleFormInput({ target }) {
 handleLoadingPage()
 
 function handleLoadingPage() {
-        try { inputEl.value = objectWithLocalStorage.email  ;
-            textareaEl.value = objectWithLocalStorage.message ;
+        try { inputEl.value = objectWithLocalStorage.email || "" ;
+            textareaEl.value = objectWithLocalStorage.message || "";
     } 
         catch { return console.log(null)  };
         }
